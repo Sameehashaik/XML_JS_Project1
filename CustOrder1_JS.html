@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 6</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid;
+        }
+
+        table {
+            margin: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <table id="table1">
+        <tr>
+            <th>Purchase Order Number</th>
+            <th>Order Date</th>
+            <th>Shipping Address</th>
+            <th>Billing Address</th>
+            <th>DeliveryNotes</th>
+        </tr>
+    </table>
+    <p id="p"></p>
+    <script>
+        //Create the XHR object
+        var xhttp = new XMLHttpRequest();
+        //Open the file
+        xhttp.open("GET", "CustOrder1_JS.xml", false);
+        //Send the request
+        xhttp.send();
+        // Read data
+        xmlDoc = xhttp.responseXML;
+        console.log(xmlDoc);
+        console.log(xmlDoc.getElementsByTagName('title')[0]);
+
+        let Orders = xmlDoc.getElementsByTagName('Order');
+        let Osize = xmlDoc.getElementsByTagName('Order').length;
+
+        for(i=0;i<Ozise;++i){
+
+            let Orders = xmlDoc.getElementsByTagName('Order');
+            let cid = Orders[i].getElementsByTagName('CustomerID')[0].innerHTML;
+            let eid = Orders[i].getElementsByTagName('EmployeeID')[0].innerHTML;
+            let od = Orders[i].getElementsByTagName('EmployeeID')[0].innerHTML;
+
+        }
+
+
+        
+    </script>
+
+</body>
+
+</html>
