@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 6</title>
+
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
+    </style>
+</head>
+
+<body>
+    <h1>Orders that have not been shipped yet:</h1>
+    <table id="table1">
+        <tr>
+            <th>Customer ID</th>
+            <th>Employee ID</th>
+            <th>Ordered Date</th>
+            <th>Requested Date</th>
+        </tr>
+    </table>
+    <p id="p"></p>
+    <script>
+        //Create the XHR object
+        var xhttp = new XMLHttpRequest();
+        //Open the file
+        xhttp.open("GET", "order_modified.xml", false);
+        //Send the request
+        xhttp.send();
+        // Read data
+        xmlDoc = xhttp.responseXML;
+        console.log(xmlDoc);
+        console.log(xmlDoc.getElementsByTagName('title')[0]);
+
+        let Orders = xmlDoc.getElementsByTagName('Order');
+        let Osize = xmlDoc.getElementsByTagName('Order').length;
+
+        for(i=0;i<Osize;++i){
+
+            let Orders = xmlDoc.getElementsByTagName('Order');
+            let cid = Orders[i].getAttribute('CustomerID');
+            let eid = Orders[i].getElementsByTagName('EmployeeID')[0].innerHTML;
+            let od = Orders[i].getElementsByTagName('OrderDate')[0].innerHTML;
+            let rd = Orders[i].getElementsByTagName('RequiredDate')[0].innerHTML;
+            //let sd = Orders[i].getElementsByTagName('ShipInfo')[0].getAttribute('ShippedDate');
+
+            if(!(Orders[i].getElementsByTagName('ShipInfo')[0].getAttribute('ShippedDate'))){
+                document.getElementById("table1").innerHTML += `<tr><td>${cid}</td><td>${eid}</td><td>${od}</td><td>${rd}</td></tr>`;
+            }
+           // document.getElementById("p").innerHTML += cid+" ";
+
+        }
+
+
+        
+    </script>
+
+</body>
+
+</html>

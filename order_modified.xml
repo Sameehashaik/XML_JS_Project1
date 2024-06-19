@@ -87,8 +87,7 @@
   </Customers>
   <!-- ORDER Data -->
   <Orders>
-    <Order oid="101">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="101" CustomerID="GREAL">
       <EmployeeID>6</EmployeeID>
       <OrderDate>1997-05-06T00:00:00</OrderDate>
       <RequiredDate>1997-05-20T00:00:00</RequiredDate>
@@ -103,8 +102,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="105">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="105" CustomerID="GREAL">
       <EmployeeID>8</EmployeeID>
       <OrderDate>1997-07-04T00:00:00</OrderDate>
       <RequiredDate>1997-08-01T00:00:00</RequiredDate>
@@ -119,8 +117,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="102">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="102" CustomerID="GREAL">
       <EmployeeID>1</EmployeeID>
       <OrderDate>1997-07-31T00:00:00</OrderDate>
       <RequiredDate>1997-08-28T00:00:00</RequiredDate>
@@ -135,8 +132,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="103">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="103" CustomerID="GREAL">
       <EmployeeID>4</EmployeeID>
       <OrderDate>1997-07-31T00:00:00</OrderDate>
       <RequiredDate>1997-08-28T00:00:00</RequiredDate>
@@ -151,8 +147,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="108">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="108" CustomerID="GREAL">
       <EmployeeID>6</EmployeeID>
       <OrderDate>1997-09-04T00:00:00</OrderDate>
       <RequiredDate>1997-10-02T00:00:00</RequiredDate>
@@ -167,8 +162,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="110">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="110" CustomerID="GREAL">
       <EmployeeID>3</EmployeeID>
       <OrderDate>1997-09-25T00:00:00</OrderDate>
       <RequiredDate>1997-10-23T00:00:00</RequiredDate>
@@ -183,8 +177,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="120">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="120" CustomerID="GREAL">
       <EmployeeID>4</EmployeeID>
       <OrderDate>1998-01-06T00:00:00</OrderDate>
       <RequiredDate>1998-02-03T00:00:00</RequiredDate>
@@ -199,8 +192,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="115">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="115" CustomerID="GREAL">
       <EmployeeID>3</EmployeeID>
       <OrderDate>1998-03-09T00:00:00</OrderDate>
       <RequiredDate>1998-04-06T00:00:00</RequiredDate>
@@ -215,8 +207,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="125">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="125" CustomerID="GREAL">
       <EmployeeID>3</EmployeeID>
       <OrderDate>1998-04-07T00:00:00</OrderDate>
       <RequiredDate>1998-05-05T00:00:00</RequiredDate>
@@ -231,8 +222,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="111">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="111" CustomerID="GREAL">
       <EmployeeID>4</EmployeeID>
       <OrderDate>1998-04-22T00:00:00</OrderDate>
       <RequiredDate>1998-05-20T00:00:00</RequiredDate>
@@ -247,8 +237,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="112">
-      <CustomerID>GREAL</CustomerID>
+    <Order oid="112" CustomerID="GREAL">
       <EmployeeID>4</EmployeeID>
       <OrderDate>1998-04-30T00:00:00</OrderDate>
       <RequiredDate>1998-06-11T00:00:00</RequiredDate>
@@ -263,8 +252,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="130">
-      <CustomerID>HUNGC</CustomerID>
+    <Order oid="130" CustomerID="HUNGC">
       <EmployeeID>3</EmployeeID>
       <OrderDate>1996-12-06T00:00:00</OrderDate>
       <RequiredDate>1997-01-03T00:00:00</RequiredDate>
@@ -279,8 +267,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="122">
-      <CustomerID>HUNGC</CustomerID>
+    <Order oid="122" CustomerID="HUNGC">
       <EmployeeID>1</EmployeeID>
       <OrderDate>1996-12-25T00:00:00</OrderDate>
       <RequiredDate>1997-01-22T00:00:00</RequiredDate>
@@ -295,8 +282,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="123">
-      <CustomerID>HUNGC</CustomerID>
+    <Order oid="123" CustomerID="HUNGC">
       <EmployeeID>3</EmployeeID>
       <OrderDate>1997-01-15T00:00:00</OrderDate>
       <RequiredDate>1997-02-12T00:00:00</RequiredDate>
@@ -311,8 +297,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="124">
-      <CustomerID>HUNGC</CustomerID>
+    <Order oid="124" CustomerID="HUNGC">
       <EmployeeID>4</EmployeeID>
       <OrderDate>1997-07-16T00:00:00</OrderDate>
       <RequiredDate>1997-08-13T00:00:00</RequiredDate>
@@ -327,8 +312,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="141">
-      <CustomerID>HUNGC</CustomerID>
+    <Order oid="141" CustomerID="HUNGC">
       <EmployeeID>8</EmployeeID>
       <OrderDate>1997-09-08T00:00:00</OrderDate>
       <RequiredDate>1997-10-06T00:00:00</RequiredDate>
@@ -343,8 +327,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="142">
-      <CustomerID>LAZYK</CustomerID>
+    <Order oid="142" CustomerID="LAZYK">
       <EmployeeID>1</EmployeeID>
       <OrderDate>1997-03-21T00:00:00</OrderDate>
       <RequiredDate>1997-04-18T00:00:00</RequiredDate>
@@ -359,8 +342,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="155">
-      <CustomerID>LAZYK</CustomerID>
+    <Order oid="155" CustomerID="LAZYK">
       <EmployeeID>8</EmployeeID>
       <OrderDate>1997-05-22T00:00:00</OrderDate>
       <RequiredDate>1997-06-19T00:00:00</RequiredDate>
@@ -375,8 +357,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="154">
-      <CustomerID>LETSS</CustomerID>
+    <Order oid="154" CustomerID="LETSS">
       <EmployeeID>1</EmployeeID>
       <OrderDate>1997-06-25T00:00:00</OrderDate>
       <RequiredDate>1997-07-23T00:00:00</RequiredDate>
@@ -391,8 +372,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="153">
-      <CustomerID>LETSS</CustomerID>
+    <Order oid="153" CustomerID="LETSS">
       <EmployeeID>8</EmployeeID>
       <OrderDate>1997-10-27T00:00:00</OrderDate>
       <RequiredDate>1997-11-24T00:00:00</RequiredDate>
@@ -407,8 +387,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="152">
-      <CustomerID>LETSS</CustomerID>
+    <Order oid="152" CustomerID="LETSS">
       <EmployeeID>6</EmployeeID>
       <OrderDate>1997-11-10T00:00:00</OrderDate>
       <RequiredDate>1997-12-08T00:00:00</RequiredDate>
@@ -423,8 +402,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="162">
-      <CustomerID>LETSS</CustomerID>
+    <Order oid="162" CustomerID="LETSS">
       <EmployeeID>4</EmployeeID>
       <OrderDate>1998-02-12T00:00:00</OrderDate>
       <RequiredDate>1998-03-12T00:00:00</RequiredDate>
@@ -439,8 +417,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="175">
-      <CustomerID>APPLE</CustomerID>
+    <Order oid="175" CustomerID="APPLE">
       <EmployeeID>2</EmployeeID>
       <OrderDate>1998-05-01T00:00:00</OrderDate>
       <RequiredDate>1998-05-15T00:00:00</RequiredDate>
@@ -455,8 +432,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="176">
-      <CustomerID>APPLE</CustomerID>
+    <Order oid="176" CustomerID="APPLE">
       <EmployeeID>5</EmployeeID>
       <OrderDate>1998-06-10T00:00:00</OrderDate>
       <RequiredDate>1998-06-24T00:00:00</RequiredDate>
@@ -471,8 +447,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="178">
-      <CustomerID>OAKLD</CustomerID>
+    <Order oid="178" CustomerID="OAKLD">
       <EmployeeID>7</EmployeeID>
       <OrderDate>1998-07-04T00:00:00</OrderDate>
       <RequiredDate>1998-07-18T00:00:00</RequiredDate>
@@ -487,8 +462,7 @@
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
-    <Order oid="179">
-      <CustomerID>OAKLD</CustomerID>
+    <Order oid="179" CustomerID="OAKLD">
       <EmployeeID>9</EmployeeID>
       <OrderDate>1998-08-20T00:00:00</OrderDate>
       <RequiredDate>1998-09-03T00:00:00 </RequiredDate>
