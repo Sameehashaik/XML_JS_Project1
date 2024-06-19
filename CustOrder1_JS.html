@@ -7,26 +7,30 @@
     <title>Step 6</title>
 
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid;
-        }
-
         table {
-            margin: 30px;
-        }
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+          }
+          th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+          th {
+            background-color: #f2f2f2;
+          }
     </style>
 </head>
 
 <body>
+    <h1>Orders that have not been shipped yet:</h1>
     <table id="table1">
         <tr>
-            <th>Purchase Order Number</th>
-            <th>Order Date</th>
-            <th>Shipping Address</th>
-            <th>Billing Address</th>
-            <th>DeliveryNotes</th>
+            <th>Customer ID</th>
+            <th>Employee ID</th>
+            <th>Ordered Date</th>
+            <th>Requested Date</th>
         </tr>
     </table>
     <p id="p"></p>
@@ -45,12 +49,19 @@
         let Orders = xmlDoc.getElementsByTagName('Order');
         let Osize = xmlDoc.getElementsByTagName('Order').length;
 
-        for(i=0;i<Ozise;++i){
+        for(i=0;i<Osize;++i){
 
             let Orders = xmlDoc.getElementsByTagName('Order');
             let cid = Orders[i].getElementsByTagName('CustomerID')[0].innerHTML;
             let eid = Orders[i].getElementsByTagName('EmployeeID')[0].innerHTML;
-            let od = Orders[i].getElementsByTagName('EmployeeID')[0].innerHTML;
+            let od = Orders[i].getElementsByTagName('OrderDate')[0].innerHTML;
+            let rd = Orders[i].getElementsByTagName('RequiredDate')[0].innerHTML;
+            //let sd = Orders[i].getElementsByTagName('ShipInfo')[0].getAttribute('ShippedDate');
+
+            if(!(Orders[i].getElementsByTagName('ShipInfo')[0].getAttribute('ShippedDate'))){
+                document.getElementById("table1").innerHTML += `<tr><td>${cid}</td><td>${eid}</td><td>${od}</td><td>${rd}</td></tr>`;
+            }
+           // document.getElementById("p").innerHTML += cid+" ";
 
         }
 
