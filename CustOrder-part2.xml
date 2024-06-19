@@ -56,6 +56,34 @@
         <Country>USA</Country>
       </FullAddress>
     </Customer>
+    <Customer CustomerID="APPLE">
+      <CompanyName>Apple Orchard Farms</CompanyName>
+      <ContactName>John Smith</ContactName>
+      <ContactTitle>CEO</ContactTitle>
+      <Phone>(408) 555-1234</Phone>
+      <Fax>(408) 555-5678</Fax>
+      <FullAddress>
+        <Address>1 Infinite Loop</Address>
+        <City>Cupertino</City>
+        <Region>CA</Region>
+        <PostalCode>95014</PostalCode>
+        <Country>USA</Country>
+      </FullAddress>
+    </Customer>
+    <Customer CustomerID="OAKLD">
+      <CompanyName>Oakland Electronics</CompanyName>
+      <ContactName>Mary Johnson</ContactName>
+      <ContactTitle>Procurement Manager</ContactTitle>
+      <Phone>(510) 555-7890</Phone>
+      <Fax>(510) 555-0987</Fax>
+      <FullAddress>
+        <Address>1234 Broadway</Address>
+        <City>Oakland</City>
+        <Region>CA</Region>
+        <PostalCode>94612</PostalCode>
+        <Country>USA</Country>
+      </FullAddress>
+    </Customer>
   </Customers>
   <!-- ORDER Data -->
   <Orders>
@@ -408,6 +436,70 @@
         <ShipCity>San Francisco</ShipCity>
         <ShipRegion>CA</ShipRegion>
         <ShipPostalCode>94117</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>APPLE</CustomerID>
+      <EmployeeID>2</EmployeeID>
+      <OrderDate>1998-05-01T00:00:00</OrderDate>
+      <RequiredDate>1998-05-15T00:00:00</RequiredDate>
+      <ShipInfo ShippedDate="1998-05-03T00:00:00">
+        <ShipVia>1</ShipVia>
+        <Freight unit="ton">30.00</Freight>
+        <ShipName>Apple Orchard Farms</ShipName>
+        <ShipAddress>1 Infinite Loop</ShipAddress>
+        <ShipCity>Cupertino</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>95014</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>APPLE</CustomerID>
+      <EmployeeID>5</EmployeeID>
+      <OrderDate>1998-06-10T00:00:00</OrderDate>
+      <RequiredDate>1998-06-24T00:00:00</RequiredDate>
+      <ShipInfo ShippedDate="1998-06-12T00:00:00">
+        <ShipVia>2</ShipVia>
+        <Freight unit="ton">50.00</Freight>
+        <ShipName>Apple Orchard Farms</ShipName>
+        <ShipAddress>1 Infinite Loop</ShipAddress>
+        <ShipCity>Cupertino</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>95014</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>OAKLD</CustomerID>
+      <EmployeeID>7</EmployeeID>
+      <OrderDate>1998-07-04T00:00:00</OrderDate>
+      <RequiredDate>1998-07-18T00:00:00</RequiredDate>
+      <ShipInfo ShippedDate="1998-07-07T00:00:00">
+        <ShipVia>3</ShipVia>
+        <Freight unit="ton">75.00</Freight>
+        <ShipName>Oakland Electronics</ShipName>
+        <ShipAddress>1234 Broadway</ShipAddress>
+        <ShipCity>Oakland</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>94612</ShipPostalCode>
+        <ShipCountry>USA</ShipCountry>
+      </ShipInfo>
+    </Order>
+    <Order>
+      <CustomerID>OAKLD</CustomerID>
+      <EmployeeID>9</EmployeeID>
+      <OrderDate>1998-08-20T00:00:00</OrderDate>
+      <RequiredDate>1998-09-03T00:00:00 </RequiredDate>
+      <ShipInfo ShippedDate="1998-08-22T00:00:00">
+        <ShipVia>1</ShipVia>
+        <Freight unit="ton">40.00</Freight>
+        <ShipName>Oakland Electronics</ShipName>
+        <ShipAddress>1234 Broadway</ShipAddress>
+        <ShipCity>Oakland</ShipCity>
+        <ShipRegion>CA</ShipRegion>
+        <ShipPostalCode>94612</ShipPostalCode>
         <ShipCountry>USA</ShipCountry>
       </ShipInfo>
     </Order>
