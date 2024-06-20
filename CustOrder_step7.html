@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Order Details</h1>
+    <table id="orders">
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Customer ID</th>
+                <th>Employee ID</th>
+                <th>Order Date</th>
+                <th>Required Date</th>
+                <th>Shipped Date</th>
+                <th>Ship Via</th>
+                <th>Freight (ton)</th>
+                <th>Ship Name</th>
+                <th>Ship Address</th>
+                <th>Ship City</th>
+                <th>Ship Region</th>
+                <th>Ship Postal Code</th>
+                <th>Ship Country</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+
+    <script>
+        // Create the XHR object
+        var xhttp = new XMLHttpRequest();
+        // Open the file
+        xhttp.open("GET", "CustOrder_part2.xml", false);
+        // Send the request
+        xhttp.send();
+        // Read data
+        var xmlDoc = xhttp.responseXML;
+
+        let orders = Array.from(xmlDoc.getElementsByTagName('Order'));
+
+        // Sort orders by Order ID
+        orders.sort((a, b) => {
+            let orderIdA = parseInt(a.getAttribute('oid'));
+            let orderIdB = parseInt(b.getAttribute('oid'));
+            return orderIdA - orderIdB;
+        });
+
+        for (let i = 0; i < orders.length; ++i) {
+            let order = orders[i];
+            let oid = order.getAttribute('oid');
+            let customerID = order.getElementsByTagName('CustomerID')[0].textContent;
+            let employeeID = order.getElementsByTagName('EmployeeID')[0].textContent;
+            let orderDate = order.getElementsByTagName('OrderDate')[0].textContent;
+            let requiredDate = order.getElementsByTagName('RequiredDate')[0].textContent;
+
+            let shipInfo = order.getElementsByTagName('ShipInfo')[0];
+            let shippedDate = shipInfo.getAttribute('ShippedDate');
+            let shipVia = shipInfo.getElementsByTagName('ShipVia')[0].textContent;
+            let freight = parseFloat(shipInfo.getElementsByTagName('Freight')[0].textContent);
+            let shipName = shipInfo.getElementsByTagName('ShipName')[0].textContent;
+            let shipAddress = shipInfo.getElementsByTagName('ShipAddress')[0].textContent;
+            let shipCity = shipInfo.getElementsByTagName('ShipCity')[0].textContent;
+            let shipRegion = shipInfo.getElementsByTagName('ShipRegion')[0].textContent;
+            let shipPostalCode = shipInfo.getElementsByTagName('ShipPostalCode')[0].textContent;
+            let shipCountry = shipInfo.getElementsByTagName('ShipCountry')[0].textContent;
+
+            let highlight = '';
+            if (freight > 30)
+                highlight = 'highlight';
+
+            document.querySelector("#orders tbody").innerHTML += `
+<tr class="${highlight}">
+    <td>${oid}</td>
+    <td>${customerID}</td>
+    <td>${employeeID}</td>
+    <td>${orderDate}</td>
+    <td>${requiredDate}</td>
+    <td>${shippedDate}</td>
+    <td>${shipVia}</td>
+    <td>${freight}</td>
+    <td>${shipName}</td>
+    <td>${shipAddress}</td>
+    <td>${shipCity}</td>
+    <td>${shipRegion}</td>
+    <td>${shipPostalCode}</td>
+    <td>${shipCountry}</td>
+</tr>
+`;
+        }
+
+
+    </script>
+</body>
+
+</html>

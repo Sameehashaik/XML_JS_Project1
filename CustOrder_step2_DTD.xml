@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE Root SYSTEM "CustOrder.dtd">
+<!DOCTYPE Root SYSTEM "CustOrder_step2.dtd">
 <Root xmlns="http://www.adventure-works.com">
   <!-- CUSTOMER Data -->
   <Customers>

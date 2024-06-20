@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Root xmlns="http://www.adventure-works.com">
+<Root xmlns="http://www.adventure-works.com"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.adventure-works.com CustOrder_step3.xsd">
   <!-- CUSTOMER Data -->
   <Customers>
     <Customer CustomerID="GREAL">
@@ -7,7 +9,7 @@
       <ContactName>Howard Snyder</ContactName>
       <ContactTitle>Marketing Manager</ContactTitle>
       <Phone>(503) 555-7555</Phone>
-      <FullAddress> 
+      <FullAddress>
         <Address>2732 Baker Blvd.</Address>
         <City>Eugene</City>
         <Region>OR</Region>
